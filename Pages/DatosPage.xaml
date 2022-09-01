@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSalud.Pages.DatosPage"
+             Title="DatosPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Label Text="Edad" Grid.Row="1" Grid.Column="0"></Label>
+        <Entry x:Name="txtEdad" Placeholder="Años" Grid.Row="1" Grid.Column="1" Keyboard="Numeric"></Entry>
+        <Label Text="Peso" Grid.Row="2" Grid.Column="0"></Label>
+        <Entry x:Name="txtPeso" Placeholder="Kilogramos" Grid.Row="2" Grid.Column="1" Keyboard="Numeric"></Entry>
+        <Label Text="Altura" Grid.Row="3" Grid.Column="0"></Label>
+        <Entry x:Name="txtAltura" Placeholder="Metros" Grid.Row="3" Grid.Column="1" Keyboard="Numeric"></Entry>
+        <Button Text="Calcular IMC" x:Name="btnIMC" Grid.Row="4" Grid.Column="0"></Button>
+    </Grid>
+</ContentPage>

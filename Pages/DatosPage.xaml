@@ -15,13 +15,18 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        
+
+        <Label x:Name="lblNombre" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"></Label>
+
         <Label Text="Edad" Grid.Row="1" Grid.Column="0"></Label>
         <Entry x:Name="txtEdad" Placeholder="Años" Grid.Row="1" Grid.Column="1" Keyboard="Numeric"></Entry>
+
         <Label Text="Peso" Grid.Row="2" Grid.Column="0"></Label>
-        <Entry x:Name="txtPeso" Placeholder="Kilogramos" Grid.Row="2" Grid.Column="1" Keyboard="Numeric"></Entry>
+        <Entry x:Name="txtPeso" Placeholder="Kgs" Grid.Row="2" Grid.Column="1" Keyboard="Numeric"></Entry>
+
         <Label Text="Altura" Grid.Row="3" Grid.Column="0"></Label>
-        <Entry x:Name="txtAltura" Placeholder="Metros" Grid.Row="3" Grid.Column="1" Keyboard="Numeric"></Entry>
-        <Button Text="Calcular IMC" x:Name="btnIMC" Grid.Row="4" Grid.Column="0"></Button>
+        <Entry x:Name="txtAltura" Placeholder="Mts" Grid.Row="3" Grid.Column="1" Keyboard="Numeric"></Entry>
+
+        <Button x:Name="btnIMC" Text="Calcular IMC" Grid.Row="4" Grid.Column="0"></Button>
     </Grid>
 </ContentPage>

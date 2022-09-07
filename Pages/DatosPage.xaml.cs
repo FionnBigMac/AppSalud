@@ -1,10 +1,13 @@
+using AppSalud.Models;
+
 namespace AppSalud.Pages;
 
 public partial class DatosPage : ContentPage
 {
-	public DatosPage()
+	public DatosPage(string nombre)
 	{
 		InitializeComponent();
+		lblNombre.Text = nombre;
 		btnIMC.Clicked += BtnIMC_Clicked;
 	}
 

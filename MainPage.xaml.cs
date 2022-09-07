@@ -1,18 +1,29 @@
-﻿namespace AppSalud;
+﻿using AppSalud.Pages;
 
-public partial class MainPage : ContentPage
+namespace AppSalud
 {
-	
 
-	public MainPage()
+	public partial class MainPage : ContentPage
 	{
-		InitializeComponent();
-		btnEntrar.Clicked += BtnEntrar_Clicked;
-	}
 
-	private void BtnEntrar_Clicked(object sender, EventArgs e)
-	{
-		throw new NotImplementedException();
+
+		public MainPage()
+		{
+			InitializeComponent();
+			btnEntrar.Clicked += BtnEntrar_Clicked;
+		}
+
+		private void BtnEntrar_Clicked(object sender, EventArgs e)
+		{
+            if (txtNombre.Text == null || txtNombre.Text.Length == 0)
+            {
+                DisplayAlert("Error", "Captura tu nombre", "Ok");
+            }
+            else
+            {
+                Navigation.PushAsync(new DatosPage(txtNombre.Text.ToString()));
+            }
+        }
 	}
 }
 

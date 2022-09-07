@@ -1,3 +1,5 @@
+using AppSalud.Models;
+
 namespace AppSalud.Pages;
 
 public partial class IMCPage : ContentPage

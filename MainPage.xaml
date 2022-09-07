@@ -8,7 +8,7 @@
             <Image Source="https://img.freepik.com/vector-gratis/grafico-forma-corazon-vector-linea-latido-medico-rojo-concepto-caridad-salud_53876-111265.jpg?w=360">
             </Image>
             <Label Text="Bienvenido a la app de salud"></Label>
-            <Entry Text="Introduce tu nombre" x:textName></Entry>
+            <Entry Text="Introduce tu nombre" x:Name="txtNombre"></Entry>
             <Button Text="Entrar" x:Name="btnEntrar"></Button>
 
         </VerticalStackLayout>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppSalud.Models
 {
-    internal class Persona
+    public class Persona
     {
         public string Nombre { get; set; }
         public int Edad { get; set; }

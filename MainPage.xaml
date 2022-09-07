@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppSalud.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="https://img.freepik.com/vector-gratis/grafico-forma-corazon-vector-linea-latido-medico-rojo-concepto-caridad-salud_53876-111265.jpg?w=360">
+            </Image>
+            <Label Text="Bienvenido a la app de salud"></Label>
+            <Entry Text="Introduce tu nombre" x:Name="txtNombre"></Entry>
+            <Button Text="Entrar" x:Name="btnEntrar"></Button>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
